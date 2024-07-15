@@ -129,6 +129,9 @@ dmypy.json
 .pyre/
 
 # Models and data
-models/*
-data/*
-runs/*
+models/**
+data/**
+runs/**
+pretrained/** 
+
+.vscode/**

@@ -5,6 +5,8 @@ from setuptools import find_packages, setup
 from torch.utils.cpp_extension import BuildExtension, CppExtension, CUDAExtension
 
 
+print("@=> Cuda check: {}".format(torch.cuda.is_available()))
+
 def make_cuda_ext(
     name, module, sources, sources_cuda=[], extra_args=[], extra_include_path=[]
 ):
